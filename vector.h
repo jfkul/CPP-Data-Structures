@@ -170,10 +170,8 @@ public:
     const T* begin() const { return m_data; }
     const T* end() const { return m_data + m_size; }
 
-    size_t size() { return m_size; }
-    size_t capacity() { return m_capacity; }
-    const size_t size() const { return m_size; }
-    const size_t capacity() const { return m_capacity; }
+    size_t size() const { return m_size; }
+    size_t capacity() const { return m_capacity; }
 };
 
 #endif //DATA_STRUCTURES_VECTOR_H
