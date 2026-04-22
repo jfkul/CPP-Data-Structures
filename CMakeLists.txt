@@ -5,4 +5,5 @@ set(CMAKE_CXX_STANDARD 20)
 
 add_executable(data_structures main.cpp
         array.h
+        vector.h
 )

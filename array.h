@@ -18,7 +18,7 @@ private:
 public:
     Array(std::initializer_list<T> list)
         : m_array { new T[list.size()] }
-    , m_size { list.size() }
+        , m_size { list.size() }
     {
         size_t i = 0;
         for (const T& value : list)
@@ -33,7 +33,7 @@ public:
 
     Array(const Array& arr)
         : m_array { new T[arr.m_size] }
-    , m_size { arr.m_size }
+        , m_size { arr.m_size }
     {
         for (size_t i = 0; i < arr.m_size; ++i)
         {
@@ -43,7 +43,7 @@ public:
 
     Array(Array&& arr)
         : m_array { arr.m_array }
-    , m_size { arr.m_size }
+        , m_size { arr.m_size }
     {
         arr.m_size = 0;
         arr.m_array = nullptr;
